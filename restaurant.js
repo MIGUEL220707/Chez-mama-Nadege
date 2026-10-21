@@ -7,7 +7,7 @@
 // Catalogue des plats : prix indicatifs à confirmer.
 const products=[
 {
-    name:"Ndolé & plantain",desc:"Le grand classique aux feuilles de ndolé et arachides.",price:3500,cat:"Traditionnel",img:"./ndole.jpg",fallbackImg:"photo-1547592180-85f173990554"
+    name:"Ndolé & plantain",desc:"Le grand classique aux feuilles de ndolé et arachides.",price:3500,cat:"Traditionnel",img:"./Ndole.jpg",fallbackImg:"photo-1547592180-85f173990554"
 }
 ,
 {
