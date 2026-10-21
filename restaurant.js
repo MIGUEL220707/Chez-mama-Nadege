@@ -7,11 +7,11 @@
 // Catalogue des plats : prix indicatifs à confirmer.
 const products=[
 {
-    name:"Ndolé & plantain",desc:"Le grand classique aux feuilles de ndolé et arachides.",price:3500,cat:"Traditionnel",img:"./Ndole.jpg",fallbackImg:"photo-1547592180-85f173990554"
+    name:"Ndolé & plantain",desc:"Le grand classique aux feuilles de ndolé et arachides.",price:3500,cat:"Traditionnel",img:"Ndole.jpg",fallbackImg:"photo-1547592180-85f173990554"
 }
 ,
 {
-    name:"Eru & water fufu",desc:"Une spécialité généreuse inspirée du Sud-Ouest.",price:3000,cat:"Traditionnel",img:"./eru.jpg",fallbackImg:"photo-1547592180-85f173990554"
+    name:"Eru & water fufu",desc:"Une spécialité généreuse inspirée du Sud-Ouest.",price:3000,cat:"Traditionnel",img:"eru.jpg",fallbackImg:"photo-1547592180-85f173990554"
 }
 ,
 {
