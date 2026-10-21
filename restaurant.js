@@ -7,27 +7,27 @@
 // Catalogue des plats : prix indicatifs à confirmer.
 const products=[
 {
-    name:"Ndolé & plantain",desc:"Le grand classique aux feuilles de ndolé et arachides.",price:3500,cat:"Traditionnel",img:"images/ndole.jpg",fallbackImg:"photo-1547592180-85f173990554"
+    name:"Ndolé & plantain",desc:"Le grand classique aux feuilles de ndolé et arachides.",price:3500,cat:"Traditionnel",img:"./ndole.jpg",fallbackImg:"photo-1547592180-85f173990554"
 }
 ,
 {
-    name:"Eru & water fufu",desc:"Une spécialité généreuse inspirée du Sud-Ouest.",price:3000,cat:"Traditionnel",img:"images/eru.jpg",fallbackImg:"photo-1547592180-85f173990554"
+    name:"Eru & water fufu",desc:"Une spécialité généreuse inspirée du Sud-Ouest.",price:3000,cat:"Traditionnel",img:"./eru.jpg",fallbackImg:"photo-1547592180-85f173990554"
 }
 ,
 {
-    name:"Poulet braisé",desc:"Marinade maison, cuisson lente et accompagnement.",price:4500,cat:"Grillades",img:"images/poulet-braise.jpg",fallbackImg:"photo-1555939594-58d7cb561ad1"
+    name:"Poulet braisé",desc:"Marinade maison, cuisson lente et accompagnement.",price:4500,cat:"Grillades",img:"./poulet-braise.jpg",fallbackImg:"photo-1555939594-58d7cb561ad1"
 }
 ,
 {
-    name:"Poisson braisé",desc:"Poisson grillé, épices maison et plantain.",price:5000,cat:"Grillades",img:"images/poisson-braise.jpg",fallbackImg:"photo-1519708227418-c8fd9a32b7a2"
+    name:"Poisson braisé",desc:"Poisson grillé, épices maison et plantain.",price:5000,cat:"Grillades",img:"./poisson-braise.jpg",fallbackImg:"photo-1519708227418-c8fd9a32b7a2"
 }
 ,
 {
-    name:"Koki & macabo",desc:"Une recette traditionnelle douce et savoureuse.",price:2500,cat:"Traditionnel",img:"images/koki-plantain.jpg",fallbackImg:"photo-1547592180-85f173990554"
+    name:"Koki & macabo",desc:"Une recette traditionnelle douce et savoureuse.",price:2500,cat:"Traditionnel",img:"./koki-plantain.jpg",fallbackImg:"photo-1547592180-85f173990554"
 }
 ,
 {
-    name:"Jus de foléré",desc:"Infusion fraîche d'hibiscus, légèrement acidulée.",price:1000,cat:"Boissons",img:"images/jus-folere.jpg",fallbackImg:"photo-1546173159-315724a31696"
+    name:"Jus de foléré",desc:"Infusion fraîche d'hibiscus, légèrement acidulée.",price:1000,cat:"Boissons",img:"./jus-folere.jpg",fallbackImg:"photo-1546173159-315724a31696"
 }
 ];
 // Panier temporaire conservé pendant la visite.
