@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="fr">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="#17251d" name="theme-color"/>
+  <meta content="Chez Mama Nad&egrave;ge &mdash; cuisine camerounaise g&eacute;n&eacute;reuse &agrave; Douala. Menu, plats du jour et commandes WhatsApp." name="description"/>
+  <title>
+   Chez Mama Nad&egrave;ge &mdash; La table du Cameroun
+  </title>
+  <link href="https://images.unsplash.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="css/restaurant.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <!-- Bandeau de démonstration : à retirer lors de la mise en production. -->
+  <div class="demo">
+   CONCEPT DE D&Eacute;MONSTRATION &middot; Douala, Cameroun &middot; Identit&eacute; &agrave; personnaliser avant publication
+  </div>
+  <!-- Navigation principale -->
+<nav class="nav">
+   <a class="brand" href="#">
+    Chez
+    <span>
+     Mama
+    </span>
+    Nad&egrave;ge.
+   </a>
+   <div class="navlinks">
+    <a href="#menu">
+     La carte
+    </a>
+    <a href="#maison">
+     Notre cuisine
+    </a>
+    <a href="#infos">
+     Nous trouver
+    </a>
+   </div>
+   <a class="nav-cta" href="#menu">
+    Commander &nearrow;
+   </a>
+  </nav>
+  <!-- Hero : proposition de valeur et visuel principal -->
+<header class="hero">
+   <div>
+    <span class="eyebrow">
+     Cuisine camerounaise &middot; Douala
+    </span>
+    <h1>
+     Le go&ucirc;t de chez nous,
+     <em>
+      avec &eacute;l&eacute;gance.
+     </em>
+    </h1>
+    <p>
+     Des recettes g&eacute;n&eacute;reuses, des produits frais et cette chaleur qui transforme chaque repas en moment de partage. Du ndol&eacute; aux brais&eacute;s, bienvenue &agrave; notre table.
+    </p>
+    <div class="actions">
+     <a class="btn btn-dark" href="#menu">
+      D&eacute;couvrir la carte &nearrow;
+     </a>
+     <a class="btn" href="#infos" style="border:1px solid #d8d2c7">
+      Horaires &amp; acc&egrave;s
+     </a>
+    </div>
+    <div class="hero-meta">
+     <div>
+      <strong>
+       100% maison
+      </strong>
+      Pr&eacute;par&eacute; avec soin
+     </div>
+     <div>
+      <strong>
+       Douala
+      </strong>
+      Sur place &amp; &agrave; emporter
+     </div>
+     <div>
+      <strong>
+       Mobile Money
+      </strong>
+      Paiement facilit&eacute;
+     </div>
+    </div>
+   </div>
+   <div class="hero-photo">
+    <img alt="Plat g&eacute;n&eacute;reux aux ingr&eacute;dients frais" src="images/restaurant-hero.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&amp;fit=crop&amp;w=1200&amp;q=85'"/>
+    <div class="photo-label">
+     <div>
+      <small>
+       La suggestion du chef
+      </small>
+      <b>
+       Ndol&eacute; &amp; plantain m&ucirc;r
+      </b>
+     </div>
+     <span>
+      ✳
+     </span>
+    </div>
+   </div>
+  </header>
+  <div class="ticker">
+   <div>
+    <span>
+     ✳ Saveurs du Cameroun
+    </span>
+    <span>
+     ✳ Fait maison chaque jour
+    </span>
+    <span>
+     ✳ Le plaisir de partager
+    </span>
+    <span>
+     ✳ Saveurs du Cameroun
+    </span>
+   </div>
+  </div>
+  <!-- Section de contenu -->
+<section class="section" id="menu">
+   <div class="section-head">
+    <div>
+     <span class="eyebrow">
+      Notre s&eacute;lection
+     </span>
+     <h2>
+      Une carte qui a du caract&egrave;re.
+     </h2>
+     <p class="sub">
+      Les incontournables du pays, servis avec g&eacute;n&eacute;rosit&eacute;.
+     </p>
+    </div>
+    <span class="sub">
+     Prix indicatifs &middot; FCFA
+    </span>
+   </div>
+   <div class="filters" id="filters">
+    <button class="filter active" data-cat="Tous">
+     Tout voir
+    </button>
+    <button class="filter" data-cat="Traditionnel">
+     Traditionnels
+    </button>
+    <button class="filter" data-cat="Grillades">
+     Grillades
+    </button>
+    <button class="filter" data-cat="Boissons">
+     Boissons
+    </button>
+   </div>
+   <div class="menu-grid" id="dishes">
+   </div>
+  </section>
+  <section class="feature" id="maison">
+   <div class="feature-wrap">
+    <div class="feature-photo">
+     <img alt="Cuisine conviviale et grillades" src="images/ambiance-cuisine.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&amp;fit=crop&amp;w=1100&amp;q=85'"/>
+    </div>
+    <div>
+     <span class="eyebrow">
+      L'esprit de la maison
+     </span>
+     <h2>
+      Une cuisine sinc&egrave;re. Une hospitalit&eacute; bien de chez nous.
+     </h2>
+     <p class="sub">
+      Ici, on cuisine comme on re&ccedil;oit : avec g&eacute;n&eacute;rosit&eacute;, attention et le respect des saveurs qui nous rassemblent.
+     </p>
+     <div class="feature-list">
+      <div>
+       <span class="check">
+        &checkmark;
+       </span>
+       <span>
+        <b>
+         Des recettes famili&egrave;res
+        </b>
+        <br/>
+        Ndol&eacute;, eru, poulet brais&eacute; et accompagnements pr&eacute;par&eacute;s avec soin.
+       </span>
+      </div>
+      <div>
+       <span class="check">
+        &checkmark;
+       </span>
+       <span>
+        <b>
+         Des produits s&eacute;lectionn&eacute;s
+        </b>
+        <br/>
+        Des ingr&eacute;dients frais, des assaisonnements &eacute;quilibr&eacute;s et une cuisson ma&icirc;tris&eacute;e.
+       </span>
+      </div>
+      <div>
+       <span class="check">
+        &checkmark;
+       </span>
+       <span>
+        <b>
+         Un service simple
+        </b>
+        <br/>
+        Commandez par WhatsApp pour convenir du retrait ou de la livraison.
+       </span>
+      </div>
+     </div>
+     <a class="btn btn-dark" href="#infos">
+      Pr&eacute;parer ma visite &nearrow;
+     </a>
+    </div>
+   </div>
+  </section>
+  <section class="section" id="infos">
+   <span class="eyebrow">
+    &Agrave; votre service
+   </span>
+   <h2>
+    Retrouvons-nous autour d'une table.
+   </h2>
+   <p class="sub">
+    Remplacez les informations de d&eacute;monstration par les coordonn&eacute;es r&eacute;elles du restaurant.
+   </p>
+   <div class="info-grid">
+    <div class="info-card">
+     <h3>
+      📍 Nous trouver
+     </h3>
+     <p>
+      [Votre quartier], Douala, Cameroun
+      <br/>
+      Un rep&egrave;re pr&eacute;cis sera ajout&eacute; ici.
+     </p>
+     <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&amp;query=restaurant+Douala" rel="noopener" target="_blank">
+      Itin&eacute;raire &nearrow;
+     </a>
+    </div>
+    <div class="info-card">
+     <h3>
+      ◷ Horaires
+     </h3>
+     <p>
+      Lundi &ndash; Samedi
+      <br/>
+      10 h 00 &ndash; 22 h 00
+      <br/>
+      Dimanche : selon disponibilit&eacute;
+     </p>
+     <p>
+      <b>
+       &Agrave; confirmer par l'&eacute;tablissement.
+      </b>
+     </p>
+    </div>
+    <div class="info-card">
+     <h3>
+      &phone; Commandes
+     </h3>
+     <p>
+      Appelez ou &eacute;crivez-nous pour les commandes, &eacute;v&eacute;nements et repas de groupe.
+     </p>
+     <button class="btn btn-gold" id="orderInfo">
+      &Eacute;crire sur WhatsApp &nearrow;
+     </button>
+    </div>
+   </div>
+  </section>
+  <!-- Pied de page -->
+<footer class="footer">
+   <span>
+    &copy;
+    <span id="year">
+    </span>
+    Chez Mama Nad&egrave;ge &middot; Concept de d&eacute;monstration
+   </span>
+   <span>
+    Imagin&eacute; au Cameroun &middot; &Agrave; personnaliser avant mise en ligne
+   </span>
+  </footer>
+  <button class="cart-fab" id="cartBtn">
+   Ma commande &middot;
+   <span id="cartCount">
+    0
+   </span>
+  </button>
+  <div class="toast" id="toast">
+   Ajout&eacute; &agrave; votre commande
+  </div>
+  <div class="modal" id="modal">
+   <div class="modal-box">
+    <button class="close" id="close">
+     ✕
+    </button>
+    <h3>
+     Votre commande
+    </h3>
+    <div class="sub" id="cartLines">
+     Votre panier est vide.
+    </div>
+    <label for="customer">
+     Votre nom
+    </label>
+    <input id="customer" placeholder="Nom et pr&eacute;nom"/>
+    <label for="delivery">
+     Retrait ou livraison
+    </label>
+    <select id="delivery">
+     <option>
+      &Agrave; emporter
+     </option>
+     <option>
+      Livraison &agrave; Douala
+     </option>
+     <option>
+      Sur place
+     </option>
+    </select>
+    <label for="address">
+     Quartier / adresse (si livraison)
+    </label>
+    <input id="address" placeholder="Ex. Bonamoussadi, Douala"/>
+    <div class="modal-actions">
+     <button class="btn" id="clearCart" style="border:1px solid #ddd">
+      Vider
+     </button>
+     <button class="btn btn-dark" id="sendOrder">
+      Envoyer sur WhatsApp &nearrow;
+     </button>
+    </div>
+    <p class="sub">
+     Le num&eacute;ro WhatsApp doit &ecirc;tre configur&eacute; dans le code avant publication.
+    </p>
+   </div>
+  </div>
+  <script defer="" src="js/restaurant.js">
+  </script>
+ </body>
+</html>
