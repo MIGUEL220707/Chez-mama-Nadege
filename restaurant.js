@@ -36,7 +36,11 @@ const money=n=>n.toLocaleString("fr-FR")+" FCFA";
 const waNumber="2376XXXXXXXX";
 // Accepte une image locale (nom.jpg), une URL complète ou un identifiant Unsplash.
 function getImageUrl(image) {
-    if (/^(https?:\/\/|images\/)/i.test(image)) return image;
+    if (/^https?:\/\//i.test(image)) return image;
+    // Un nom avec une extension désigne un fichier local ; les identifiants photo-* restent distants.
+    if (/^(?:\.?\/)?images\//i.test(image) || /\.(?:jpe?g|png|webp|gif|avif|svg)$/i.test(image)) {
+        return "./" + String(image).replace(/^\.?\//, "");
+    }
     return `https://images.unsplash.com/${image}?auto=format&fit=crop&w=800&q=80`;
 }
 
