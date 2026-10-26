@@ -35,13 +35,22 @@ let cart=[];
 const money=n=>n.toLocaleString("fr-FR")+" FCFA";
 const waNumber="2376XXXXXXXX";
 // Accepte une image locale (nom.jpg), une URL complète ou un identifiant Unsplash.
+function localImagePaths(image) {
+    const file = String(image).replace(/^\.?\//, "").replace(/^images\//i, "");
+    return ["./" + file, "./images/" + file];
+}
 function getImageUrl(image) {
     if (/^https?:\/\//i.test(image)) return image;
-    // Un nom avec une extension désigne un fichier local ; les identifiants photo-* restent distants.
-    if (/^(?:\.?\/)?images\//i.test(image) || /\.(?:jpe?g|png|webp|gif|avif|svg)$/i.test(image)) {
+    if (/^(?:\.?\/)?images\//i.test(image)) {
         return "./" + String(image).replace(/^\.?\//, "");
     }
+    if (/\.(?:jpe?g|png|webp|gif|avif|svg)$/i.test(image)) {
+        return localImagePaths(image)[0];
+    }
     return `https://images.unsplash.com/${image}?auto=format&fit=crop&w=800&q=80`;
+}
+function getLegacyImageUrl(image) {
+    return localImagePaths(image)[1];
 }
 
 // Affiche les plats selon la catégorie sélectionnée.
@@ -60,7 +69,7 @@ function render(cat = "Tous") {
                         loading="lazy"
                         src="${imageUrl}"
                         alt="${product.name}"
-                        onerror="this.onerror=null; this.src='${fallbackUrl}'"
+                        data-legacy-src="${getLegacyImageUrl(product.img)}" onerror="if(!this.dataset.legacyTried && this.dataset.legacySrc){this.dataset.legacyTried='1';this.src=this.dataset.legacySrc}else{this.onerror=null;this.src='${fallbackUrl}'}"
                     >
                     <div class="dish-body">
                         <div class="dish-top">
